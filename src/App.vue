@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="flex flex-col">
-    <div id="nav"></div>
-    <app-header></app-header>
+    <header-home></header-home>
+<!--    <div id="nav"></div>-->
+<!--    <app-header></app-header>-->
+
     <div class="router_view_holder">
       <router-view />
     </div>
@@ -9,11 +11,13 @@
   </div>
 </template>
 <script>
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HeaderHome from "./components/header-home";
 export default {
   components: {
-    "app-header": Header,
+    // "app-header": Header,
+    "header-home":HeaderHome,
     "app-footer": Footer,
   },
 };

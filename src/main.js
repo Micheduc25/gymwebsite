@@ -6,6 +6,8 @@ import Vuesax from 'vuesax'
 
 import './assets/styles/index.css';
 import 'vuesax/dist/vuesax.css' //Vuesax styles
+
+
 Vue.use(Vuesax, {
   // options here
   colors: {
@@ -22,5 +24,9 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+
+  mixins:[
+
+  ],
   render: h => h(App)
 }).$mount('#app')
