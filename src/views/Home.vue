@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container">
+  <div :style="'margin-top:'+header_height+'px;'" class="">
     <swiper class="swiper-wrapper" :options="swiperOption">
       <swiper-slide class="swiper-slide">Slide 1</swiper-slide>
       <swiper-slide class="swiper-slide">Slide 2</swiper-slide>
@@ -15,6 +15,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import {mapGetters} from "vuex";
 // import "swiper/swiper-bundle.css";
 export default {
   name: "Home",
@@ -27,10 +28,10 @@ export default {
     return {
       swiperOption: {
         effect: "coverflow",
-        spaceBetween: 30,
+        // spaceBetween: 30,
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: "auto",
+        slidesPerView: 1,
         coverflowEffect: {
           rotate: 20,
           stretch: 0,
@@ -46,6 +47,10 @@ export default {
       },
     };
   },
+
+  computed:{
+    ...mapGetters("header",["header_height"])
+  }
 };
 </script>
 
@@ -53,9 +58,9 @@ export default {
 @import "../assets/styles/swiper.css";
 .swiper-container {
   width: 100%;
-  height: 400px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 600px;
+  //padding-top: 50px;
+  //padding-bottom: 50px;
 }
 
 .swiper-wrapper {
