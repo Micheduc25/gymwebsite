@@ -2,7 +2,7 @@
   <header class="header-home text-white  w-full py-6 items-center flex justify-around bgcolor-primary">
     <div class="nav-wrapper flex justify-around w-8/12">
       <div class="gym-logo flex items-center w-3/12">
-        <img width="70" height="70" src="@/assets/images/logo.png" alt="gym logo">
+        <img width="70" height="70" src="/images/logo.png" alt="gym logo">
         <h1 class="ml-2 text-3xl">G.Y.M</h1>
 
       </div>

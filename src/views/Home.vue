@@ -2,7 +2,9 @@
 <transition type="fade">
   <div class="app-home">
     <swiper  :options="swiperOption">
-      <swiper-slide :key="`slide${num}`" v-for="num in 7" class="swiper-slide">Slide{{num}}</swiper-slide>
+      <swiper-slide :key="`slide${index}`" v-for="(image,index) in slide_images" class="swiper-slide">
+        <img :src="'/images/'+image" :alt="`slide image ${index+1}`">
+      </swiper-slide>
 
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -56,6 +58,40 @@
 
         </middle-block>
     </section>
+
+    <section class="services mb-6 flex justify-center">
+        <service-card :items="[
+            'E-commerce Strategy',
+            'Design ',
+            'Development', 'Actions to'
+        ]" icon="com" title="Web Development">
+
+        </service-card>
+
+      <service-card :items="[
+            'E-commerce Strategy',
+            'Design ',
+            'Development', 'Actions to'
+        ]" icon="ee" title="Web Development">
+
+        </service-card>
+
+      <service-card :items="[
+            'E-commerce Strategy',
+            'Design ',
+            'Development', 'Actions to'
+        ]" icon="mec" title="Web Development">
+
+        </service-card>
+
+      <service-card :items="[
+            'E-commerce Strategy',
+            'Design ',
+            'Development', 'Actions to'
+        ]" icon="civ" title="Web Development">
+
+        </service-card>
+    </section>
   </div>
 </transition>
 </template>
@@ -64,36 +100,37 @@
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import middleBlock from "@/components/blocks/image-text-block";
 import {mapGetters} from "vuex";
-// import "swiper/swiper-bundle.css";
+import serviceCard from "@/components/service-card";
+import "swiper/swiper-bundle.css";
 export default {
   name: "Home",
   title: "3D Coverflow effect",
   components: {
     Swiper,
     SwiperSlide,
-    middleBlock
+    middleBlock,
+    serviceCard
   },
   data() {
     return {
       swiperOption: {
-        effect: "coverflow",
-
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 1,
-        // coverflowEffect: {
-        //   rotate: 20,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 1,
-        //   slideShadows: true,
-        // },
-        loop: true,
+        // loop: true,
         autoplay: {
-          delay: 5000,
-          // disableOnInteraction: false,
+          delay: 3000,
+
         },
       },
+
+      slide_images:[
+        "slide1.jpg",
+        "slide2.jpg",
+        "slide3.jpg",
+        "slide4.jpg",
+        "slide5.jpg"
+      ]
     };
   },
 
