@@ -59,36 +59,40 @@
         </middle-block>
     </section>
 
-    <section class="services mb-6 flex justify-center">
+    <h1 class="text-3xl font-bold text-center mb-6">What We Do?</h1>
+    <section class="services mb-6 flex flex-wrap justify-center">
         <service-card :items="[
-            'E-commerce Strategy',
-            'Design ',
-            'Development', 'Actions to'
-        ]" icon="com" title="Web Development">
+            'Web and Mobile App Development',
+            'IT System Security ',
+            'Big Data and Neural Networks',
+             'Network Installation'
+        ]" icon="com" title="IT Services">
 
         </service-card>
 
       <service-card :items="[
-            'E-commerce Strategy',
-            'Design ',
-            'Development', 'Actions to'
-        ]" icon="ee" title="Web Development">
+            'House and Company wiring',
+            'Smart Devices and Buildings ',
+            'Electronics Creation Maintenance',
+             'Robotics and AI'
+        ]" icon="ee" title="Electronics Services">
 
         </service-card>
 
       <service-card :items="[
-            'E-commerce Strategy',
-            'Design ',
-            'Development', 'Actions to'
-        ]" icon="mec" title="Web Development">
+            'Design and Creation of Mechanical Systems',
+            'Automobile Maintenance and Repair',
+            'Technical Advice'
+        ]" icon="mec" title="Mechanical Services">
 
         </service-card>
 
       <service-card :items="[
-            'E-commerce Strategy',
-            'Design ',
-            'Development', 'Actions to'
-        ]" icon="civ" title="Web Development">
+            'CAD of Buildings',
+            'Architectural Plans and Prototypes',
+            'Physical Implementation of Structures',
+
+        ]" icon="civ" title="Architectural Design">
 
         </service-card>
     </section>

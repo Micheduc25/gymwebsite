@@ -30,13 +30,28 @@
 </template>
 
 <script>
+import {mapActions} from "vuex";
+
 export default {
-name: "header-home"
+name: "header-home",
+  methods:{
+    ...mapActions("header",["setHeaderHeight"])
+
+  },
+
+  mounted() {
+
+    const header_height = this.$el.clientHeight;
+    // console.log("header height is ", header_height);
+    this.setHeaderHeight(header_height);
+  }
 }
 </script>
 
 <style lang="scss" scoped>
   .header-home{
+    position:fixed;
+    z-index: 10;
     box-shadow: 0 2px 2px 1px rgba(0,0,0,.6);
     .auth-links{
       width:max-content;

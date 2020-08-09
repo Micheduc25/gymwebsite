@@ -68,6 +68,7 @@ Computer,
 
 <style lang="scss" scoped>
   .service-card{
+    width:320px;
     border-radius: 6px;
     padding: 35px 40px;
     transition:.4s;

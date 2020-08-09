@@ -4,7 +4,7 @@
 <!--    <div id="nav"></div>-->
 <!--    <app-header></app-header>-->
 
-    <div class="router_view_holder">
+    <div :style="`margin-top:${header_height}px`" class="router_view_holder">
       <router-view />
     </div>
     <app-footer></app-footer>
@@ -14,7 +14,12 @@
 // import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeaderHome from "./components/header-home";
+import {mapGetters} from "vuex";
 export default {
+  computed:{
+    ...mapGetters("header",["header_height"])
+  }
+  ,
   components: {
     // "app-header": Header,
     "header-home":HeaderHome,
@@ -31,6 +36,7 @@ export default {
   color: #2c3e50;
 
   .router_view_holder {
+
     min-height: 50vh;
   }
 }
