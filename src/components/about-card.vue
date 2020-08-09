@@ -39,6 +39,14 @@ name: "about-card",
 
       position:relative;
       cursor: pointer;
+      animation:appear .5s ease-in-out;
+      animation-fill-mode: backwards;
+
+      @for $i from 1 through 7{
+        &:nth-child(#{$i}){
+          animation-delay: $i*0.2*1s;
+        }
+      }
 
       &:hover{
         transform:translateY(-10px);
@@ -110,5 +118,18 @@ name: "about-card",
         }
 
       }
+    }
+
+    @keyframes appear {
+
+      from{
+        transform:scale(.6);
+        opacity: 0;
+      }
+      to{
+        transform:scale(1);
+        opacity: 1;
+      }
+
     }
 </style>

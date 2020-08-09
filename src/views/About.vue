@@ -31,9 +31,9 @@
         </h1>
           <h2 class="text-xl ">Our team is friendly, talkative, and fully reliable.</h2>
 
-      <div class="team-members flex flex-wrap   mt-6">
+      <div class="team-members mx-2 flex flex-wrap   mt-6">
         <team-card image="team1.jpg" name="Nzitou Gaetan" qualification="Mechanical and Industrial Engineer, Founder"></team-card>
-        <team-card image="team2.jpg" name="Nobless Numfor" qualification="Civil Enginner, Co-founder"></team-card>
+        <team-card image="team2.jpg" name="Nobless Numfor" qualification="Mechanical Engineer, Co-founder"></team-card>
         <team-card image="team3.jpg" name="Dze Nadege FLORA NDUM" qualification="Marketing Supervisor"></team-card>
         <team-card image="team4.jpg" name="AJEAGAH JOY ATAAJI" qualification="Mechanical and Industrial Engineer"></team-card>
         <team-card image="team5.jpg" name="AKONGOH REUBEN" qualification="MECHANICAL DESIGN ENGINEER"></team-card>
@@ -41,16 +41,20 @@
         <team-card image="team7.jpg" name="Ngoe Kelson" qualification="Computer Engineer"></team-card>
       </div>
     </section>
+
+    <stats-band></stats-band>
   </div>
 </template>
 
 <script>
 import aboutCard from "../components/about-card";
 import teamCard from "../components/team-card";
+import statsBand from "../components/modules/stats-band";
   export  default {
       components:{
         aboutCard,
-        teamCard
+        teamCard,
+        statsBand
       }
   }
 </script>
