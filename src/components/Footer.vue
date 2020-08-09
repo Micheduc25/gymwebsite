@@ -50,15 +50,15 @@
           </div>
 
           <div class="flex flex-col">
-            <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Mechanical Services</span>
+            <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Contact</span>
             <span class="my-2">
-              <a href="#" class="text-blue-700 text-md hover:text-blue-500">Design and Creation of Mechanical Systems</a>
+              <a href="#" class="text-blue-700 text-md hover:text-blue-500">greatyoungminds237@gmail.com</a>
             </span>
             <span class="my-2">
-              <a href="#" class="text-blue-700 text-md hover:text-blue-500">Automobile Maintenance and Repair </a>
+              <a href="#" class="text-blue-700 text-md hover:text-blue-500 flex justify-center sm:justify-start"><img src="/images/icons/WhatsApp.svg" alt="" class="h-8 mr-1">651408846</a>
             </span>
             <span class="my-2">
-              <a href="#" class="text-blue-700 text-md hover:text-blue-500">Technical Advice</a>
+              <a href="#" class="text-blue-700 text-md hover:text-blue-500 flex justify-center sm:justify-start"><img src="/images/icons/facebook.svg" alt="" class="h-8 mr-1">G.Y.M</a>
             </span>
 
           </div>
