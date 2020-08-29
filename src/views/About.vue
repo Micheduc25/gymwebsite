@@ -33,12 +33,14 @@
 
       <div class="team-members mx-2 flex flex-wrap   mt-6">
         <team-card image="team1.jpg" name="Nzitou Gaetan" qualification="Mechanical and Industrial Engineer, Founder"></team-card>
-        <team-card image="team2.jpg" name="Nobless Numfor" qualification="Mechanical Engineer, Co-founder"></team-card>
-        <team-card image="team3.jpg" name="Dze Nadege FLORA NDUM" qualification="Marketing Supervisor"></team-card>
-        <team-card image="team4.jpg" name="AJEAGAH JOY ATAAJI" qualification="Mechanical and Industrial Engineer"></team-card>
-        <team-card image="team5.jpg" name="AKONGOH REUBEN" qualification="MECHANICAL DESIGN ENGINEER"></team-card>
-        <team-card image="team6.jpg" name="ASONGANYI ROUCLEC" qualification="COMPUTER ENGINEER"></team-card>
+        <team-card image="team2.jpeg" name="Nobless Numfor" qualification="Mechanical Engineer, Co-founder"></team-card>
+        <team-card image="team3.jpg" name="Dze Nadege Flora Ndum" qualification="Marketing Supervisor"></team-card>
+        <team-card image="team4.jpg" name="Ajeagah Joy Ataaji" qualification="Mechanical and Industrial Engineer"></team-card>
+        <team-card image="team5.jpg" name="Akongoh Reuben" qualification="MECHANICAL DESIGN ENGINEER"></team-card>
+        <team-card image="team6.jpg" name="Asonganyi Rouclec" qualification="COMPUTER ENGINEER"></team-card>
         <team-card image="team7.jpg" name="Ngoe Kelson" qualification="Computer Engineer"></team-card>
+        <team-card image="team8.jpg" name="Tangu Achilis" qualification="Computer Engineer"></team-card>
+        <team-card image="team9.jpeg" name="Ndjock Michel" qualification="Computer Engineer"></team-card>
       </div>
     </section>
 
